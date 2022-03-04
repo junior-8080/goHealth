@@ -1,0 +1,181 @@
+#report {
+	height: 50vh;
+	overflow: scroll;
+	overflow-x: hidden;
+
+	.pagebreak {
+		page-break-after: always;
+	}
+
+	td {
+		padding-left: 5px;
+	}
+
+	.required {
+		color: #D40707 !important;
+		font-weight: bold !important;
+	}
+
+	.heading,
+	.fieldsetct {
+		font-family: Arial, Helvetica, sans-serif;
+		color: #000;
+	}
+
+	.fieldsetct {
+		font-family: Arial;
+		font-size: 9pt;
+		color: #000;
+	}
+
+	.membertitle {
+		font-family: Arial;
+		color: #000;
+		font-size: 11pt;
+		font-weight: bold;
+		text-decoration: underline;
+		text-transform: uppercase;
+	}
+
+	table.adtable {
+		border: 1px solid #000;
+		border-bottom: 0px;
+		border-right: 0px;
+		font-size: 9pt;
+		width: 100%;
+	}
+
+	.adtable td,
+	.adtable th {
+		border-bottom: 1px solid #000;
+		border-right: 1px solid #000;
+	}
+
+	table .noborder {
+		border: 0px !important
+	}
+
+	.noborder td {
+		border: 0px !important
+	}
+
+	.adtable thead th.exp-th {
+		border: 1px solid #333;
+		border-left: none;
+	}
+
+	.exp-last-th {
+		border-left: 1px solid #333 !important;
+	}
+
+	.exp-first-td {
+		border-left: 1px solid #333 !important;
+	}
+
+	.box,
+	.widgets fieldset,
+	.widgets .fieldset {
+		background: none repeat scroll 0 0 #FAFAFA;
+		border: 1px solid #D6D6D6;
+		margin-bottom: 15px;
+		padding: 10px 15px;
+	}
+
+	td.value {
+		font-size: 13.5px;
+	}
+
+	td.label label {
+		font-size: 13.5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	th.label label {
+		font-size: 13px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	tr:nth-child(even) {
+		background: rgba($warning, 0.06);
+	}
+
+	tr:nth-child(odd) {
+		background: #fff;
+	}
+
+	.line-division-raw {
+		width: 100%;
+		height: 15px;
+		border-bottom: 1px solid #d2d2d2;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	td.b-grid {
+		border-bottom: 1px solid #CCC
+	}
+
+	.hastable table {
+		margin: 0 0 70px 0;
+		background: #fff;
+		width: 100%;
+		border: 1px solid #dedede;
+		border-bottom: none;
+	}
+
+	.hastable thead td,
+	.hastable thead th {
+		background-color: #e6e6e6;
+	}
+
+	.hastable tr td,
+	.hastable thead th {
+		border-left: 1px solid #ccc;
+		text-align: left;
+		padding: 8px;
+		color: #616161;
+		vertical-align: middle;
+	}
+
+	.gridproby td {
+		border: none !important
+	}
+
+	.gridproby table {
+		border: none !important
+	}
+
+	@media all {
+		.page-break {
+			margin-bottom: 10px;
+		}
+	}
+
+	@media print {
+		.page-break {
+			display: block;
+			page-break-after: always;
+		}
+	}
+
+	.float-left {
+		float: left;
+	}
+
+	h2,
+	h1 {
+		margin: 0;
+		padding: 0;
+	}
+
+	h1 {
+		font-size: 20px;
+	}
+
+	td,
+	th {
+		padding: 5px;
+	}
+}

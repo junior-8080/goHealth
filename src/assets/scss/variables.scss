@@ -1,0 +1,27 @@
+$primary: #5c9499;
+$primary-hover: #326266;
+
+$secondary: #9097c4;
+$secondary-hover: #7780b7;
+
+$success: #1cc88a;
+$success-hover: #17a673;
+
+$danger: #e74a3b;
+$danger-hover: #e02d1b;
+
+$warning: #f5a623;
+$warning-hover: #e7940b;
+
+$info: #0198e8;
+$info-hover: #0177b5;
+
+$light: #f8f9fa;
+$light-hover: #e2e6ea;
+
+$dark: #3d4465;
+$dark-hover: #2f344d;
+
+.primary {
+    color: $primary !important;
+}

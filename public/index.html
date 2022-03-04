@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GoHealthy Controller</title>
+
+  <base href="/">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="GoHealthy Controller">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="GoHealthy Controller">
+  <meta name="theme-color" content="#294aac">
+  <link rel="icon" sizes="192x192" href="assets/img/favicon.png">
+  <link rel="manifest" href="manifest.json" />
+
+
+  <link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome-free/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/sb-admin-2.css" />
+  
+
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="assets/js/sb-admin-2.js"></script>
+
+  <!-- AIzaSyAbYW5DN0n5LLAbGVS3F7tIWoM_P7CP4AY -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBJOaFipNDgayRM0JYvMq0YJfh3o2X3Nk&libraries=places,geometry"></script>
+
+  <!-- <script src="assets/vendor/chart.js/Chart.min.js"></script>
+  <script src="assets/js/demo/chart-area-demo.js"></script>
+  <script src="assets/js/demo/chart-pie-demo.js"></script> -->
+
+</head>
+
+<body id="">
+  <noscript>You need to enable JavaScript to this app.</noscript>
+  <div id="root"></div>
+
+  <script type="text/javascript">
+    var toast = function (type, text, position = 'top-right') {
+      switch (type) {
+        case 'success':
+          var icon = 'success';
+          var heading = 'Success';
+          var loaderBg = '#f96868';
+          break;
+        case 'info':
+          var icon = 'info';
+          var heading = 'Info';
+          var loaderBg = '#46c35f';
+          break;
+        case 'warning':
+          var icon = 'warning';
+          var heading = 'Warning';
+          var loaderBg = '#57c7d4';
+          break;
+        case 'error':
+          var icon = 'error';
+          var heading = 'Error';
+          var loaderBg = '#f2a654';
+          break;
+      }
+      $.toast({
+        icon: icon,
+        text: text,
+        heading: heading,
+        loaderBg: loaderBg,
+        position: String(position),
+        showHideTransition: 'slide'
+      });
+    }
+    // function summernote() {
+    //   setTimeout(() => {
+    //     window.$('.summernote').summernote({
+    //       height: 250,
+    //       toolbar: [
+    //         ['headline', ['style']],
+    //         ['style', ['bold', 'italic', 'underline', 'superscript', 'subscript', 'strikethrough', 'clear']],
+    //         ['textsize', ['fontsize']],
+    //         ['alignment', ['ul', 'ol', 'paragraph', 'lineheight']],
+    //       ]
+    //     });
+    //   }, 0);
+    // }
+  </script>
+</body>
+
+</html>
